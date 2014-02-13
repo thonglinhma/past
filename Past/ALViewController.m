@@ -34,7 +34,7 @@
    RACSignal *logInSignal = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         [PFFacebookUtils logInWithPermissions:@[ @"email"] block:^(PFUser *user, NSError *error) {
             if (!user) {
-                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+                NSLog(@"Uh oh. The user cancelled the Facebook login.xxxxx");
             } else if (user.isNew) {
                 NSLog(@"User signed up and logged in through Facebook!");
             } else {
